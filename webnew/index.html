@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minecraft Community Marketplace</title>
+
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Segoe UI,Arial,sans-serif;
+  background:#0b0b0b;
+  color:#eee
+}
+
+/* HEADER */
+header{
+  background:#1c1c1c;
+  border-bottom:1px solid #2a2a2a
+}
+.nav{
+  max-width:1300px;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:14px 20px
+}
+
+/* LOGO ANIMATION */
+.logo{
+  font-weight:900;
+  letter-spacing:3px;
+  font-size:22px;
+  display:flex;
+  gap:4px;
+  cursor:pointer;
+}
+.logo span{
+  display:inline-block;
+  animation:floatGlow 2.8s ease-in-out infinite;
+}
+.logo span:nth-child(2){
+  animation-delay:.15s;
+  color:#84c987;
+}
+
+@keyframes floatGlow{
+  0%{
+    transform:translateY(0);
+    text-shadow:0 0 6px rgba(212,175,55,.4);
+  }
+  50%{
+    transform:translateY(-6px);
+    text-shadow:
+      0 0 8px #d4af37,
+      0 0 16px rgba(212,175,55,.8);
+  }
+  100%{
+    transform:translateY(0);
+    text-shadow:0 0 6px rgba(212,175,55,.4);
+  }
+}
+
+/* HERO */
+.hero{
+  background:radial-gradient(circle at top,#2c2c2c,#0b0b0b);
+  padding:50px 20px 70px
+}
+.hero-inner{
+  max-width:1300px;
+  margin:auto
+}
+.market-title{
+  text-align:center;
+  margin-bottom:40px
+}
+.market-title h1{
+  margin:0;
+  font-size:36px;
+  letter-spacing:2px
+}
+.market-title p{
+  color:#afcf74;
+  margin-top:8px
+}
+
+/* FEATURE GRID */
+.feature{
+  display:grid;
+  grid-template-columns:2fr 1.2fr;
+  gap:30px;
+  align-items:center
+}
+.feature-box{
+  background:#111;
+  border:3px solid #d4af37;
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 0 30px rgba(212,175,55,.35)
+}
+.feature-box img{
+  width:100%;
+  display:block
+}
+.feature-info{
+  padding:22px
+}
+.feature-info h2{
+  margin:0 0 10px;
+  font-size:22px
+}
+.feature-info p{
+  color:#ccc;
+  font-size:14px;
+  line-height:1.5
+}
+
+/* SIDE GRID */
+.side-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px
+}
+.side-grid img{
+  width:100%;
+  border:3px solid #d4af37;
+  border-radius:8px;
+  box-shadow:0 0 20px rgba(212,175,55,.25)
+}
+
+/* SECTION */
+.section{
+  max-width:1100px;
+  margin:70px auto;
+  padding:0 20px
+}
+.section h2{
+  text-align:center;
+  margin-bottom:20px
+}
+.section p,li{
+  color:#ddd;
+  font-size:15px
+}
+.steps li{
+  margin-bottom:10px
+}
+.warn{
+  background:#2a1212;
+  border-left:5px solid #ff4d4d;
+  padding:16px;
+  border-radius:8px;
+  margin:25px 0
+}
+
+.join{
+  display:block;
+  margin:30px auto;
+  width:fit-content;
+  background:#229ED9;
+  color:#fff;
+  text-decoration:none;
+  padding:14px 28px;
+  border-radius:30px;
+  font-weight:bold
+}
+
+footer{
+  text-align:center;
+  padding:30px;
+  color:#777;
+  font-size:13px;
+  border-top:1px solid #222
+}
+
+@media(max-width:900px){
+  .feature{grid-template-columns:1fr}
+  .side-grid{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">
+      <span>MINE</span><span>CRAFT</span>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="market-title">
+      <h1>MINECRAFT FREE ICLOUD</h1>
+      <p>Hỗ trợ iCloud Free • Share mod free • Cài game an toàn</p>
+    </div>
+
+    <div class="feature">
+      <div class="feature-box">
+        <img src="d.jpg" alt="Minecraft">
+        <div class="feature-info">
+          <h2>Minecraft – Share iCloud Free</h2>
+          <p>Hỗ trợ tải Minecraft bản quyền từ iCloud Free admin: Tú Phùn</p>
+        </div>
+      </div>
+
+      <div class="side-grid">
+        <img src="h.jpg">
+        <img src="g.jpg">
+        <img src="e.jpg">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>👥 GIỚI THIỆU NHÓM TELEGRAM</h2>
+  <ul class="steps">
+    <li>Chia sẻ iCloud Free</li>
+    <li>Hướng dẫn cài Minecraft</li>
+    <li>Share mod / addon miễn phí</li>
+    <li>Không mua bán – không thu phí</li>
+  </ul>
+
+  <div class="warn">
+    ⚠️ Chỉ đăng nhập iCloud Free trong App Store
+  </div>
+
+  <div class="side-grid">
+    <img src="a.jpg">
+    <img src="b.jpg">
+    <img src="c.jpg">
+  </div>
+
+  <a class="join" href="#">👉 THAM GIA TELEGRAM 👈</a>
+</section>
+
+<footer>
+  © 2026 Minecraft Community Tuphun
+</footer>
+
+</body>
+</html>
